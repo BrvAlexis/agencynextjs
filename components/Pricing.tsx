@@ -1,53 +1,35 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'motion/react';
 import { Check } from 'lucide-react';
-
-const fadeUpVariant: any = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-};
 
 export default function Pricing() {
   const essentialFeatures = [
-    'Design UX/UI sur-mesure',
-    'Développement frontend optimisé',
-    'Intégration CMS basique',
-    'Optimisation SEO fondations'
+    'Design sur-mesure ergonomique',
+    'Code optimisé pour la vitesse',
+    'Interface de mise à jour simple (CMS)',
+    'Préparation au référencement Google'
   ];
 
   const advancedFeatures = [
-    'Architecture web moderne (React/Next.js)',
-    'Back-end et bases de données',
-    'Animations complexes',
-    'Tableau de bord administrateur'
+    'Technologie moderne et ultra-rapide (Next.js)',
+    'Base de données & fonctions dynamiques',
+    'Animations et interactions soignées',
+    'Espace d\'administration sur-mesure'
   ];
 
   return (
     <div className="mt-32 w-full">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={fadeUpVariant}
-        className="text-center mb-16"
-      >
+      <div className="text-center mb-16">
         <h2 className="text-3xl lg:text-4xl font-space font-bold text-white mb-4">Tarification Transparente</h2>
         <p className="opacity-70 max-w-xl mx-auto text-base">
           Des solutions adaptées à la taille et aux ambitions de votre projet.
         </p>
-      </motion.div>
+      </div>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto w-full">
         {/* Essentiel Card */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          variants={fadeUpVariant}
-          className="glass rounded-[2rem] p-10 flex flex-col w-full"
-        >
+        <div className="glass rounded-[2rem] p-10 flex flex-col w-full">
           <div className="mb-8">
             <h3 className="text-2xl font-space font-bold mb-2 text-white">Essentiel</h3>
             <p className="opacity-70 text-sm text-slate-300">Parfait pour les sites vitrines et le lancement de l&apos;activité</p>
@@ -66,16 +48,10 @@ export default function Pricing() {
           <button className="w-full glass hover:bg-white/10 text-white py-4 rounded-xl font-bold transition-colors">
             Demander une estimation
           </button>
-        </motion.div>
+        </div>
 
         {/* Avancé Card */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          variants={fadeUpVariant}
-          className="glass rounded-[2rem] p-10 flex flex-col relative overflow-hidden w-full"
-        >
+        <div className="glass rounded-[2rem] p-10 flex flex-col relative overflow-hidden w-full">
           <div className="absolute top-0 right-0 bg-gradient-to-l from-indigo-500 to-pink-500 text-[10px] font-bold uppercase tracking-wider py-1 px-4 rounded-bl-lg text-white">
             Populaire
           </div>
@@ -97,7 +73,7 @@ export default function Pricing() {
           <button className="w-full bg-white hover:bg-gray-100 text-black py-4 rounded-xl font-bold transition-colors">
             Démarrer le projet
           </button>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

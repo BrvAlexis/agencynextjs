@@ -10,11 +10,7 @@ import Footer from '@/components/Footer';
 
 export default function LandingPage() {
   return (
-    <div className="relative w-full h-full min-h-screen font-sans text-white overflow-x-hidden selection:bg-indigo-500 selection:text-white flex flex-col">
-      <div className="mesh-blob blob-1"></div>
-      <div className="mesh-blob blob-2"></div>
-      <div className="mesh-blob blob-3"></div>
-
+    <div className="relative w-full h-full min-h-screen font-sans text-slate-900 overflow-x-hidden selection:bg-blue-500 selection:text-white flex flex-col">
       {/* Navigation */}
       <Navbar />
 
@@ -22,7 +18,7 @@ export default function LandingPage() {
       <Hero />
 
       {/* Main Content Sections */}
-      <main className="text-white pb-32 relative z-10 w-full flex-grow">
+      <main className="pb-32 relative z-10 w-full flex-grow">
         <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
           {/* Features and Testimonials Grid */}
           <Features />

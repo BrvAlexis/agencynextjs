@@ -11,27 +11,17 @@ const faqs = [
   },
   {
     question: "Proposez-vous un accompagnement après la mise en ligne ?",
-    answer: "Oui, nous offrons des forfaits de maintenance et de support pour assurer la sécurité, les mises à jour et l'évolution continue de votre produit digital."
+    answer: "Oui, nous offrons des forfaits de maintenance et de support pour assurer la sécurité, les mises à jour et l'évolution continue de votre site internet."
   },
   {
-    question: "Quelle est votre méthode de gestion de projet ?",
-    answer: "Nous utilisons des méthodologies agiles (Scrum/Kanban) avec des sprints réguliers. Cela nous permet d'être flexibles et de vous impliquer à chaque étape."
+    question: "Comment se déroule notre collaboration ?",
+    answer: "Nous travaillons par étapes simples et progressives, avec des points de suivi réguliers. Cela nous permet d'avancer en toute transparence, d'adapter le site à vos besoins au fil de l'eau et de vous impliquer à chaque étape importante."
   },
   {
-    question: "Refaites-vous également le design de sites existants ?",
-    answer: "Absolument. Nous réalisons des audits de l'existant et proposons des refontes complètes (UX/UI et technique) pour améliorer les performances et l'expérience utilisateur."
+    question: "Pouvez-vous moderniser ou refaire un site existant ?",
+    answer: "Absolument. Nous étudions votre site actuel et vous proposons une refonte complète de son apparence et de sa technique pour le rendre plus moderne, plus rapide et plus facile à utiliser pour vos visiteurs."
   }
 ];
-
-const fadeUpVariant: any = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-};
-
-const staggerContainer: any = {
-  hidden: { opacity: 1 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
-};
 
 function FaqAccordionItem({ question, answer }: { question: string, answer: string }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,13 +33,11 @@ function FaqAccordionItem({ question, answer }: { question: string, answer: stri
         className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
       >
         <span className="font-bold text-white pr-8">{question}</span>
-        <motion.div
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="flex-shrink-0"
+        <div
+          className={`flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
         >
           <ChevronDown className="w-5 h-5 text-white/70" />
-        </motion.div>
+        </div>
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -73,31 +61,20 @@ function FaqAccordionItem({ question, answer }: { question: string, answer: stri
 export default function FaqAccordion() {
   return (
     <div className="mt-20 max-w-3xl mx-auto w-full">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={fadeUpVariant}
-        className="text-center mb-10"
-      >
+      <div className="text-center mb-10">
         <h2 className="text-3xl lg:text-4xl font-space font-bold text-white mb-6">Questions Fréquentes</h2>
         <p className="opacity-70 max-w-xl mx-auto">
           Retrouvez les réponses aux questions les plus posées par nos clients concernant notre méthode de travail.
         </p>
-      </motion.div>
+      </div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={staggerContainer}
-      >
+      <div>
         {faqs.map((faq, index) => (
-          <motion.div key={index} variants={fadeUpVariant}>
+          <div key={index}>
             <FaqAccordionItem question={faq.question} answer={faq.answer} />
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }

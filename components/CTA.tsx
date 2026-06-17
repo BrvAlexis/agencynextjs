@@ -1,24 +1,12 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-
-const fadeUpVariant: any = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-};
 
 export default function CTA() {
   return (
     <div className="mt-32 w-full">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
-        variants={fadeUpVariant}
-        className="glass rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden w-full"
-      >
+      <div className="glass rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden w-full">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 rounded-full blur-[100px] -z-10"></div>
         
         <h2 className="text-4xl lg:text-5xl font-space font-bold mb-6 text-gradient">Prêt à propulser votre projet ?</h2>
@@ -33,7 +21,7 @@ export default function CTA() {
             Voir nos réalisations
           </button>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
