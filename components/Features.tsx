@@ -9,14 +9,14 @@ export default function Features() {
     <div className="w-full">
       {/* Social Proof */}
       <div className="relative max-w-7xl mx-auto px-6 w-full z-20 mb-20">
-        <div className="flex flex-col md:flex-row items-center border border-slate-200/80 rounded-3xl glass py-8 px-8 md:px-16">
+        <div className="flex flex-col md:flex-row items-center border border-slate-200/80 rounded-3xl bg-white py-8 px-8 md:px-16">
           <span className="text-[10px] uppercase tracking-widest opacity-40 font-bold mb-6 md:mb-0 md:mr-12 whitespace-nowrap">Ils nous font confiance</span>
-          <div className="flex-grow flex flex-wrap justify-between items-center opacity-30 grayscale gap-8 md:gap-4 w-full">
-            <span className="text-xl md:text-2xl font-bold">VELOCITY</span>
-            <span className="text-xl md:text-2xl font-bold">QUANTUM</span>
-            <span className="text-xl md:text-2xl font-bold">LUMOS</span>
-            <span className="text-xl md:text-2xl font-bold">VERTEX</span>
-            <span className="hidden md:block text-2xl font-bold">AETHER</span>
+          <div className="flex-grow flex flex-wrap justify-between items-center opacity-35 grayscale gap-8 md:gap-4 w-full">
+            <span className="text-base md:text-lg font-extrabold tracking-wider">CHARPENTE DUBOSC</span>
+            <span className="text-base md:text-lg font-extrabold tracking-wider">BOULANGERIE DUPONT</span>
+            <span className="text-base md:text-lg font-extrabold tracking-wider">GARAGE MOREL</span>
+            <span className="text-base md:text-lg font-extrabold tracking-wider">TRANS-VAL DE LOIRE</span>
+            <span className="hidden md:block text-base md:text-lg font-extrabold tracking-wider">OPTIQUE BLANCHARD</span>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function Features() {
         <div className="grid lg:grid-cols-2 gap-8 mb-8 relative -top-10 md:-top-16 z-20">
           
           {/* Box 1: Features (Light theme) */}
-          <div className="glass rounded-[32px] p-10 md:p-14 hover:-translate-y-1 transition-transform duration-500 shadow-sm">
+          <div className="bg-white border border-slate-200 rounded-[32px] p-10 md:p-14 hover:-translate-y-1 transition-transform duration-500 shadow-sm">
             <h2 className="text-3xl font-space font-bold mb-8 text-neutral-text">Notre Approche</h2>
             <div className="space-y-6">
               <div className="flex gap-4 items-start">
@@ -61,7 +61,7 @@ export default function Features() {
           </div>
  
           {/* Box 2: Portfolio Details */}
-          <div className="glass rounded-[32px] p-10 md:p-14 overflow-hidden relative group hover:-translate-y-1 transition-transform duration-500 shadow-sm">
+          <div className="bg-white border border-slate-200 rounded-[32px] p-10 md:p-14 overflow-hidden relative group hover:-translate-y-1 transition-transform duration-500 shadow-sm">
             <div className="relative z-10 w-2/3">
               <h2 className="text-3xl font-space font-bold text-slate-900 mb-4">Portfolio services</h2>
               <p className="text-slate-600 text-sm leading-relaxed mb-8">
@@ -74,23 +74,23 @@ export default function Features() {
               </div>
             </div>
  
-            {/* Decorative Browser Mockup Abstract */}
-            <div className="absolute -bottom-16 -right-10 md:-right-4 w-[85%] h-64 bg-slate-50 border border-slate-200 rounded-t-xl shadow-md p-4 transition-transform duration-700 group-hover:-translate-y-4">
-               <div className="flex items-center gap-2 mb-4 border-b border-slate-200 pb-3">
-                 <div className="flex gap-1.5 opacity-60">
-                   <div className="w-2.5 h-2.5 rounded-full bg-red-400"></div>
-                   <div className="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
-                   <div className="w-2.5 h-2.5 rounded-full bg-green-400"></div>
-                 </div>
-                 <div className="w-1/2 h-4 bg-slate-200 rounded-full mx-auto opacity-70"></div>
+            {/* Real Case Study Card */}
+            <div className="absolute -bottom-6 -right-6 w-[80%] bg-slate-50 border border-slate-200 rounded-2xl shadow-md p-6 transition-transform duration-700 group-hover:-translate-y-2">
+               <div className="border-b border-slate-200 pb-3 mb-4">
+                 <span className="text-[10px] font-bold uppercase tracking-wider text-blue-700">Étude de Cas : Maison Lemaire</span>
+                 <h4 className="font-space font-bold text-slate-900 mt-1">Artisan Ébéniste</h4>
                </div>
-               <div className="grid grid-cols-3 gap-3">
-                  <div className="col-span-1 h-32 bg-slate-200/50 border border-slate-200/20 rounded-lg"></div>
-                  <div className="col-span-2 flex flex-col gap-3">
-                     <div className="w-3/4 h-4 bg-slate-200 rounded-sm"></div>
-                     <div className="w-full h-12 bg-white border border-slate-200 rounded-lg translate-y-2"></div>
-                     <div className="w-5/6 h-6 bg-slate-200 rounded-sm mt-auto"></div>
-                  </div>
+               <div className="space-y-2 text-xs">
+                 <p className="text-slate-600">
+                   <strong className="text-slate-900 font-bold">Défi :</strong> Site internet obsolète et invisible sur Google.
+                 </p>
+                 <p className="text-slate-600">
+                   <strong className="text-slate-900 font-bold">Solution :</strong> Refonte Next.js ultra-rapide et SEO local.
+                 </p>
+                 <p className="font-bold text-emerald-700 mt-2 flex items-center gap-1.5">
+                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                   Résultat : +65% de devis en 3 mois
+                 </p>
                </div>
             </div>
           </div>
@@ -99,45 +99,44 @@ export default function Features() {
         {/* Section 2: Contact Form & Team Testimonial */}
         <div className="grid lg:grid-cols-2 gap-8 items-stretch pt-8">
           
-          {/* Box 3: Contact/Dashboard Visual */}
-          <div className="glass rounded-[32px] p-10 md:p-14 relative overflow-hidden flex flex-col justify-between group shadow-sm">
-             <h2 className="text-3xl font-space font-bold text-slate-900 z-10 mb-8">Contactez-nous</h2>
+          {/* Box 3: Process Steps / Call Audit Guide */}
+          <div className="bg-white border border-slate-200 rounded-[32px] p-10 md:p-14 relative overflow-hidden flex flex-col justify-between group shadow-sm">
+             <div className="relative z-10">
+               <h2 className="text-3xl font-space font-bold text-slate-900 mb-4">Votre Audit Gratuit</h2>
+               <p className="text-slate-600 text-sm leading-relaxed mb-8">
+                 Pas de jargon, pas d&apos;engagement. Voici comment nous définissons votre trajectoire digitale en 3 étapes claires.
+               </p>
+             </div>
              
-             {/* Abstract Dashboard Component inside soft background */}
-             <div className="w-[110%] -ml-[5%] bg-slate-50 border border-slate-200 rounded-t-2xl shadow-md p-6 relative z-10 mt-6 transform group-hover:-translate-y-2 transition-transform duration-500">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center">
-                      <div className="w-4 h-4 border-2 border-white/50 rounded-sm"></div>
-                    </div>
-                    <div className="w-24 h-4 bg-slate-200 rounded-md"></div>
+             {/* Step List Container */}
+             <div className="w-[110%] -ml-[5%] bg-slate-50 border border-slate-200 rounded-t-2xl shadow-md p-6 relative z-10 mt-6 transform group-hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-4">
+                <div className="flex gap-4 items-start bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-blue-700 flex-shrink-0">
+                    1
                   </div>
-                  <div className="flex gap-2">
-                    <div className="w-16 h-6 bg-slate-200 rounded-full"></div>
-                    <div className="w-6 h-6 rounded-full bg-slate-200"></div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-sm mb-0.5">Appel Découverte (15 min)</h4>
+                    <p className="text-slate-500 text-xs leading-normal">Discussion simple et directe autour de vos objectifs et de vos blocages métiers.</p>
                   </div>
                 </div>
-                
-                <div className="grid grid-cols-4 gap-4 mb-6">
-                   {[1,2,3,4].map((i) => (
-                     <div key={i} className="h-16 bg-white border border-slate-200/80 rounded-lg p-2 flex flex-col justify-end">
-                       <div className="w-1/2 h-2 bg-slate-200 mb-1"></div>
-                       <div className="w-3/4 h-3 bg-slate-300 rounded-sm"></div>
-                     </div>
-                   ))}
-                </div>
- 
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-1/3 space-y-2">
-                    <div className="h-4 bg-slate-200 rounded-md"></div>
-                    <div className="h-4 bg-slate-200 rounded-md"></div>
-                    <div className="h-4 bg-slate-200 rounded-md"></div>
+
+                <div className="flex gap-4 items-start bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-blue-700 flex-shrink-0">
+                    2
                   </div>
-                  <div className="flex-1 h-32 bg-white border border-slate-200 rounded-xl relative overflow-hidden">
-                     <svg className="absolute bottom-0 w-full h-[80%]" preserveAspectRatio="none" viewBox="0 0 100 100" fill="none">
-                       <path d="M0,100 L0,50 Q25,20 50,60 T100,30 L100,100 Z" fill="rgba(29,78,216,0.05)" />
-                       <path d="M0,50 Q25,20 50,60 T100,30" stroke="#1D4ED8" strokeWidth="2" fill="none" />
-                     </svg>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-sm mb-0.5">Analyse & Audit Technique</h4>
+                    <p className="text-slate-500 text-xs leading-normal">Nous passons au crible votre site existant (vitesse, SEO, conversion) et vos outils actuels.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 items-start bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
+                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-blue-700 flex-shrink-0">
+                    3
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 text-sm mb-0.5">Plan d&apos;Action Détaillé</h4>
+                    <p className="text-slate-500 text-xs leading-normal">Vous recevez un rapport écrit avec des actions concrètes à fort impact, sans aucun engagement.</p>
                   </div>
                 </div>
              </div>
@@ -174,18 +173,17 @@ export default function Features() {
               {/* Testimonial snippet */}
               <div className="flex items-center gap-4 p-5 bg-white border border-slate-200 rounded-2xl w-full shadow-sm">
                   <Image 
-                    src="https://picsum.photos/seed/greg2/100/100" 
-                    alt="Gregory Mac" 
+                    src="/gregory_lemaire.png" 
+                    alt="Grégory Lemaire" 
                     width={56} 
                     height={56} 
                     className="rounded-full object-cover border border-slate-200 shadow-sm"
-                    referrerPolicy="no-referrer"
                   />
                   <div>
                      <h4 className="font-bold text-slate-900 flex items-center gap-2">
-                      Gregory Mac <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                      Grégory Lemaire <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                     </h4>
-                    <p className="text-sm text-slate-600 mt-1 italic">&quot;Un gain en efficacité opérationnelle exceptionnel grâce à Register.&quot;</p>
+                    <p className="text-sm text-slate-600 mt-1 italic">&quot;Le nouveau site conçu par Register charge instantanément et nos clients nous trouvent sur Google. Le flux de devis a changé notre carnet de commandes.&quot;</p>
                   </div>
               </div>
           </div>

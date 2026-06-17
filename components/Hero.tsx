@@ -2,7 +2,7 @@
 
 import React from 'react';
 import EmailSubscription from './EmailSubscription';
-import AbstractMockup from './AbstractMockup';
+import AgencyStats from './AgencyStats';
 
 export default function Hero() {
   return (
@@ -22,8 +22,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right: Abstract UI Illustration */}
-      <AbstractMockup />
+      {/* Right: Typography-driven metrics */}
+      <AgencyStats />
     </section>
   );
 }

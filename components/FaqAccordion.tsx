@@ -27,16 +27,16 @@ function FaqAccordionItem({ question, answer }: { question: string, answer: stri
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="glass rounded-2xl overflow-hidden mb-4">
+    <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden mb-4 shadow-sm">
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
+        className="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50 transition-colors"
       >
-        <span className="font-bold text-white pr-8">{question}</span>
+        <span className="font-bold text-slate-900 pr-8">{question}</span>
         <div
           className={`flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
         >
-          <ChevronDown className="w-5 h-5 text-white/70" />
+          <ChevronDown className="w-5 h-5 text-slate-500" />
         </div>
       </button>
       <AnimatePresence>
@@ -48,7 +48,7 @@ function FaqAccordionItem({ question, answer }: { question: string, answer: stri
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <div className="px-6 pb-6 text-white/70 text-sm leading-relaxed">
+            <div className="px-6 pb-6 text-slate-600 text-sm leading-relaxed">
               {answer}
             </div>
           </motion.div>
@@ -62,8 +62,8 @@ export default function FaqAccordion() {
   return (
     <div className="mt-20 max-w-3xl mx-auto w-full">
       <div className="text-center mb-10">
-        <h2 className="text-3xl lg:text-4xl font-space font-bold text-white mb-6">Questions Fréquentes</h2>
-        <p className="opacity-70 max-w-xl mx-auto">
+        <h2 className="text-3xl lg:text-4xl font-space font-bold text-slate-900 mb-6">Questions Fréquentes</h2>
+        <p className="text-slate-600 max-w-xl mx-auto">
           Retrouvez les réponses aux questions les plus posées par nos clients concernant notre méthode de travail.
         </p>
       </div>
