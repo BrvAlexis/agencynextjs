@@ -10,3 +10,7 @@ coverage/
 .vercel
 .eslintcache
 *.tsbuildinfo
+.gemini
+.impeccable
+.codex
+.claude
