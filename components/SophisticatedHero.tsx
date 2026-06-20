@@ -1,11 +1,19 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import SophisticatedStatsBento from './SophisticatedStatsBento';
+import { useBooking } from '@/context/BookingContext';
 
 export default function SophisticatedHero() {
   const partners = ['MAISON LEMAIRE', 'ATELIER BROUSSARD', 'TRANS-VAL'];
+  const { openModal } = useBooking();
+  const [emailInput, setEmailInput] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    openModal(emailInput);
+  };
 
   return (
     <section className="relative pt-40 pb-32 px-6 max-w-7xl mx-auto overflow-hidden">
@@ -32,18 +40,20 @@ export default function SophisticatedHero() {
             Nous transformons votre vision artisanale en une expérience digitale d&apos;élite. Conception sur-mesure pour les bâtisseurs de demain.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
             <div className="relative flex-grow max-w-md">
               <input 
                 type="email" 
                 placeholder="votre@email.fr" 
+                value={emailInput}
+                onChange={(e) => setEmailInput(e.target.value)}
                 className="w-full h-14 rounded-full px-8 bg-white/50 border border-zinc-900/10 focus:outline-none focus:border-rose-accent transition-colors diffuse-shadow font-sans text-zinc-900" 
               />
-              <button className="absolute right-1.5 top-1.5 h-11 px-8 button-secondary text-sm">
+              <button type="submit" className="absolute right-1.5 top-1.5 h-11 px-8 button-secondary text-sm cursor-pointer">
                 Démarrer
               </button>
             </div>
-          </div>
+          </form>
           
           <motion.div 
             variants={{

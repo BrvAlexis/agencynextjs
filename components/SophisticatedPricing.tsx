@@ -3,8 +3,11 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Check, Activity } from 'lucide-react';
+import { useBooking } from '@/context/BookingContext';
 
 export default function SophisticatedPricing() {
+  const { openModal } = useBooking();
+
   return (
     <section className="relative py-32 px-6 bg-zinc-950 text-white rounded-[4rem] mx-6 overflow-hidden">
       {/* Background Layers */}
@@ -79,7 +82,10 @@ export default function SophisticatedPricing() {
             <li className="flex items-center gap-3 text-sm opacity-80"><Check className="w-4 h-4 text-emerald-400" /> Optimisation SEO local</li>
             <li className="flex items-center gap-3 text-sm opacity-80"><Check className="w-4 h-4 text-emerald-400" /> Hébergement ultra-rapide</li>
           </ul>
-          <button className="w-full py-4 button-secondary border border-white/10 hover:bg-white hover:text-zinc-900">
+          <button 
+            onClick={() => openModal()} 
+            className="w-full py-4 button-secondary border border-white/10 hover:bg-white hover:text-zinc-900 cursor-pointer"
+          >
             Nous contacter
           </button>
         </motion.div>
@@ -105,7 +111,10 @@ export default function SophisticatedPricing() {
             <li className="flex items-center gap-3 text-sm"><Check className="w-4 h-4 text-white" /> Espace client dédié</li>
             <li className="flex items-center gap-3 text-sm"><Check className="w-4 h-4 text-white" /> Maintenance préventive 24/7</li>
           </ul>
-          <button className="w-full py-4 rounded-full bg-white text-rose-accent font-bold active:scale-95 transition-transform shadow-lg hover:bg-zinc-50">
+          <button 
+            onClick={() => openModal()} 
+            className="w-full py-4 rounded-full bg-white text-rose-accent font-bold active:scale-95 transition-transform shadow-lg hover:bg-zinc-50 cursor-pointer"
+          >
             Lancer le projet
           </button>
         </motion.div>

@@ -3,8 +3,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'motion/react';
+import { useBooking } from '@/context/BookingContext';
 
 export default function SophisticatedNavbar() {
+  const { openModal, isBooked } = useBooking();
+
   return (
     <motion.nav 
       initial={{ y: -20, opacity: 0 }}
@@ -22,8 +25,11 @@ export default function SophisticatedNavbar() {
           <Link href="#" className="hover:opacity-100 transition-opacity">Processus</Link>
           <Link href="#" className="hover:opacity-100 transition-opacity">Contact</Link>
         </div>
-        <button className="button-primary px-5 py-2 text-sm">
-          Audit gratuit
+        <button 
+          onClick={() => openModal()} 
+          className="button-primary px-5 py-2 text-sm cursor-pointer"
+        >
+          {isBooked ? 'Mon rdv' : 'Audit gratuit'}
         </button>
       </div>
     </motion.nav>

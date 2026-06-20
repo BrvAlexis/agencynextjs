@@ -2,8 +2,11 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import { useBooking } from '@/context/BookingContext';
 
 export default function SophisticatedCTA() {
+  const { openModal } = useBooking();
+
   return (
     <section className="py-40 px-6 text-center">
       <motion.div 
@@ -20,10 +23,13 @@ export default function SophisticatedCTA() {
           Rejoignez le cercle restreint des entreprises qui maîtrisent leur image numérique.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-6">
-          <button className="button-secondary px-10 py-5 text-lg diffuse-shadow font-sans">
+          <button 
+            onClick={() => openModal()} 
+            className="button-secondary px-10 py-5 text-lg diffuse-shadow font-sans cursor-pointer"
+          >
             Réserver mon audit
           </button>
-          <button className="bg-white text-zinc-900 border border-zinc-900/10 px-10 py-5 rounded-full font-bold text-lg hover:bg-zinc-50 transition-colors active:scale-95 font-sans">
+          <button className="bg-white text-zinc-900 border border-zinc-900/10 px-10 py-5 rounded-full font-bold text-lg hover:bg-zinc-50 transition-colors active:scale-95 font-sans cursor-pointer">
             Découvrir nos œuvres
           </button>
         </div>
