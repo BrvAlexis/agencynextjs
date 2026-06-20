@@ -13,7 +13,7 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <nav className="relative z-50 flex items-center justify-between px-6 md:px-12 py-4 max-w-7xl mx-auto bg-white/90 backdrop-blur-md border border-slate-200/80 rounded-3xl mt-4 w-[calc(100%-2rem)] shadow-ambient">
+    <nav className="relative z-50 flex items-center justify-between px-6 md:px-12 py-4 max-w-7xl mx-auto bg-white/90 backdrop-blur-md border border-slate-200/80 rounded-xl mt-4 w-[calc(100%-2rem)] shadow-ambient">
       <div className="flex items-center gap-2 cursor-pointer group">
         <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center font-space font-bold text-lg text-white group-hover:scale-110 transition-transform">
           R

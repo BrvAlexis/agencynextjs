@@ -23,10 +23,10 @@ export default function Process() {
         {steps.map((step, i) => (
           <div 
             key={i}
-            className="bg-white border border-slate-200 rounded-[2rem] p-8 hover:-translate-y-2 transition-transform duration-500 shadow-sm"
+            className="bg-white border border-slate-200 rounded-xl p-8 hover:-translate-y-2 transition-transform duration-500 shadow-sm"
           >
             <div className="w-12 h-12 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center mb-6">
-              <step.icon className="w-6 h-6 text-blue-700" />
+              <step.icon className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-xl font-bold mb-3 text-slate-900">{step.title}</h3>
             <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>

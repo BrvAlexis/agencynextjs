@@ -29,7 +29,7 @@ export default function Pricing() {
 
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto w-full">
         {/* Essentiel Card */}
-        <div className="bg-white border border-slate-200 rounded-[2rem] p-10 flex flex-col w-full shadow-sm">
+        <div className="bg-white border border-slate-200 rounded-xl p-10 flex flex-col w-full shadow-sm">
           <div className="mb-8">
             <h3 className="text-2xl font-space font-bold mb-2 text-slate-900">Essentiel</h3>
             <p className="text-slate-600 text-sm">Parfait pour les sites vitrines et le lancement de l&apos;activité</p>
@@ -51,8 +51,8 @@ export default function Pricing() {
         </div>
 
         {/* Avancé Card */}
-        <div className="bg-white border border-slate-200 rounded-[2rem] p-10 flex flex-col relative overflow-hidden w-full shadow-sm">
-          <div className="absolute top-0 right-0 bg-blue-700 text-[10px] font-bold uppercase tracking-wider py-1 px-4 rounded-bl-lg text-white">
+        <div className="bg-white border border-slate-200 rounded-xl p-10 flex flex-col relative overflow-hidden w-full shadow-sm">
+          <div className="absolute top-0 right-0 bg-primary text-[10px] font-bold uppercase tracking-wider py-1 px-4 rounded-bl-lg text-white">
             Populaire
           </div>
           <div className="mb-8">

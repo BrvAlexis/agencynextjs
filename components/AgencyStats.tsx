@@ -36,16 +36,16 @@ export default function AgencyStats() {
       {stats.map((stat, i) => (
         <div
           key={i}
-          className="bg-white border border-slate-200 rounded-[2rem] p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+          className="bg-white border border-slate-200 rounded-xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
         >
           <div>
             <div className="w-10 h-10 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center mb-6">
-              <stat.icon className="w-5 h-5 text-blue-700" />
+              <stat.icon className="w-5 h-5 text-primary" />
             </div>
             <div className="font-space font-bold text-4xl text-slate-900 mb-2 leading-none">
               {stat.value}
             </div>
-            <div className="text-xs font-bold uppercase tracking-wider text-blue-700 mb-3">
+            <div className="text-xs font-bold uppercase tracking-wider text-primary mb-3">
               {stat.label}
             </div>
           </div>

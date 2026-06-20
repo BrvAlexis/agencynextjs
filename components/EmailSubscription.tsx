@@ -44,7 +44,7 @@ export default function EmailSubscription() {
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-6 right-6 z-[100] bg-white border border-slate-200 px-6 py-4 rounded-2xl flex items-center gap-3 shadow-2xl"
+            className="fixed bottom-6 right-6 z-[100] bg-white border border-slate-200 px-6 py-4 rounded-xl flex items-center gap-3 shadow-2xl"
           >
             <div className="w-8 h-8 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center">
               <Check className="w-4 h-4 text-emerald-600" strokeWidth={3} />

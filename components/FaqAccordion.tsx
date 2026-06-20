@@ -27,7 +27,7 @@ function FaqAccordionItem({ question, answer }: { question: string, answer: stri
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden mb-4 shadow-sm">
+    <div className="bg-white border border-slate-200 rounded-xl overflow-hidden mb-4 shadow-sm">
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50 transition-colors"

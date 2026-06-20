@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 export default function CTA() {
   return (
     <div className="mt-32 w-full">
-      <div className="bg-white border border-slate-200 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden w-full shadow-sm">
+      <div className="bg-white border border-slate-200 rounded-xl p-12 md:p-20 text-center relative overflow-hidden w-full shadow-sm">
         
         <h2 className="text-4xl lg:text-5xl font-space font-bold mb-6 text-slate-900">Prêt à propulser votre projet ?</h2>
         <p className="max-w-2xl mx-auto mb-10 text-lg text-slate-600">

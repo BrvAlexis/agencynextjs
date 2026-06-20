@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="max-w-2xl relative z-20">
         <h1 className="text-5xl lg:text-7xl font-space font-bold leading-[1.05] tracking-tight mb-6 text-slate-900">
           Création de sites <br/> 
-          web sur <span className="text-blue-700">mesure</span>
+          web sur <span className="text-primary">mesure</span>
         </h1>
         <p className="text-slate-700 text-lg leading-relaxed mb-10 max-w-lg">
           L&apos;agence Register vous accompagne dans votre transformation digitale. Conception sur-mesure, développement performant, et stratégie ciblée pour asseoir votre autorité.

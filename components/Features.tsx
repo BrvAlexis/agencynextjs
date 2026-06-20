@@ -9,7 +9,7 @@ export default function Features() {
     <div className="w-full">
       {/* Social Proof */}
       <div className="relative max-w-7xl mx-auto px-6 w-full z-20 mb-20">
-        <div className="flex flex-col md:flex-row items-center border border-slate-200/80 rounded-3xl bg-white py-8 px-8 md:px-16">
+        <div className="flex flex-col md:flex-row items-center border border-slate-200/80 rounded-xl bg-white py-8 px-8 md:px-16">
           <span className="text-[10px] uppercase tracking-widest opacity-40 font-bold mb-6 md:mb-0 md:mr-12 whitespace-nowrap">Ils nous font confiance</span>
           <div className="flex-grow flex flex-wrap justify-between items-center opacity-35 grayscale gap-8 md:gap-4 w-full">
             <span className="text-base md:text-lg font-extrabold tracking-wider">CHARPENTE DUBOSC</span>
@@ -27,12 +27,12 @@ export default function Features() {
         <div className="grid lg:grid-cols-2 gap-8 mb-8 relative -top-10 md:-top-16 z-20">
           
           {/* Box 1: Features (Light theme) */}
-          <div className="bg-white border border-slate-200 rounded-[32px] p-10 md:p-14 hover:-translate-y-1 transition-transform duration-500 shadow-sm">
+          <div className="bg-white border border-slate-200 rounded-xl p-10 md:p-14 hover:-translate-y-1 transition-transform duration-500 shadow-sm">
             <h2 className="text-3xl font-space font-bold mb-8 text-neutral-text">Notre Approche</h2>
             <div className="space-y-6">
               <div className="flex gap-4 items-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-50 text-blue-700 border border-blue-100 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-blue-700" strokeWidth={3} />
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-50 text-primary border border-blue-100 flex items-center justify-center mt-1">
+                  <Check className="w-4 h-4 text-primary" strokeWidth={3} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1 text-slate-900">Analyse Personnalisée</h3>
@@ -40,8 +40,8 @@ export default function Features() {
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-50 text-blue-700 border border-blue-100 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-blue-700" strokeWidth={3} />
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-50 text-primary border border-blue-100 flex items-center justify-center mt-1">
+                  <Check className="w-4 h-4 text-primary" strokeWidth={3} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1 text-slate-900">Structure évolutive</h3>
@@ -49,8 +49,8 @@ export default function Features() {
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-50 text-blue-700 border border-blue-100 flex items-center justify-center mt-1">
-                  <Check className="w-4 h-4 text-blue-700" strokeWidth={3} />
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-50 text-primary border border-blue-100 flex items-center justify-center mt-1">
+                  <Check className="w-4 h-4 text-primary" strokeWidth={3} />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1 text-slate-900">Support Continu</h3>
@@ -61,7 +61,7 @@ export default function Features() {
           </div>
  
           {/* Box 2: Portfolio Details */}
-          <div className="bg-white border border-slate-200 rounded-[32px] p-10 md:p-14 overflow-hidden relative group hover:-translate-y-1 transition-transform duration-500 shadow-sm">
+          <div className="bg-white border border-slate-200 rounded-xl p-10 md:p-14 overflow-hidden relative group hover:-translate-y-1 transition-transform duration-500 shadow-sm">
             <div className="relative z-10 w-2/3">
               <h2 className="text-3xl font-space font-bold text-slate-900 mb-4">Portfolio services</h2>
               <p className="text-slate-600 text-sm leading-relaxed mb-8">
@@ -75,9 +75,9 @@ export default function Features() {
             </div>
  
             {/* Real Case Study Card */}
-            <div className="absolute -bottom-6 -right-6 w-[80%] bg-slate-50 border border-slate-200 rounded-2xl shadow-md p-6 transition-transform duration-700 group-hover:-translate-y-2">
+            <div className="absolute -bottom-6 -right-6 w-[80%] bg-slate-50 border border-slate-200 rounded-xl shadow-md p-6 transition-transform duration-700 group-hover:-translate-y-2">
                <div className="border-b border-slate-200 pb-3 mb-4">
-                 <span className="text-[10px] font-bold uppercase tracking-wider text-blue-700">Étude de Cas : Maison Lemaire</span>
+                 <span className="text-[10px] font-bold uppercase tracking-wider text-primary">Étude de Cas : Maison Lemaire</span>
                  <h4 className="font-space font-bold text-slate-900 mt-1">Artisan Ébéniste</h4>
                </div>
                <div className="space-y-2 text-xs">
@@ -100,7 +100,7 @@ export default function Features() {
         <div className="grid lg:grid-cols-2 gap-8 items-stretch pt-8">
           
           {/* Box 3: Process Steps / Call Audit Guide */}
-          <div className="bg-white border border-slate-200 rounded-[32px] p-10 md:p-14 relative overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div className="bg-white border border-slate-200 rounded-xl p-10 md:p-14 relative overflow-hidden flex flex-col justify-between group shadow-sm">
              <div className="relative z-10">
                <h2 className="text-3xl font-space font-bold text-slate-900 mb-4">Votre Audit Gratuit</h2>
                <p className="text-slate-600 text-sm leading-relaxed mb-8">
@@ -109,9 +109,9 @@ export default function Features() {
              </div>
              
              {/* Step List Container */}
-             <div className="w-[110%] -ml-[5%] bg-slate-50 border border-slate-200 rounded-t-2xl shadow-md p-6 relative z-10 mt-6 transform group-hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-4">
+             <div className="w-[110%] -ml-[5%] bg-slate-50 border border-slate-200 rounded-t-xl shadow-md p-6 relative z-10 mt-6 transform group-hover:-translate-y-2 transition-transform duration-500 flex flex-col gap-4">
                 <div className="flex gap-4 items-start bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
-                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-blue-700 flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-primary flex-shrink-0">
                     1
                   </div>
                   <div>
@@ -121,7 +121,7 @@ export default function Features() {
                 </div>
 
                 <div className="flex gap-4 items-start bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
-                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-blue-700 flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-primary flex-shrink-0">
                     2
                   </div>
                   <div>
@@ -131,7 +131,7 @@ export default function Features() {
                 </div>
 
                 <div className="flex gap-4 items-start bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
-                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-blue-700 flex-shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-blue-50 border border-blue-100 flex items-center justify-center font-bold text-sm text-primary flex-shrink-0">
                     3
                   </div>
                   <div>
@@ -171,7 +171,7 @@ export default function Features() {
               </div>
 
               {/* Testimonial snippet */}
-              <div className="flex items-center gap-4 p-5 bg-white border border-slate-200 rounded-2xl w-full shadow-sm">
+              <div className="flex items-center gap-4 p-5 bg-white border border-slate-200 rounded-xl w-full shadow-sm">
                   <Image 
                     src="/gregory_lemaire.png" 
                     alt="Grégory Lemaire" 
